@@ -33,7 +33,7 @@ public class Headers implements CContext.Directives {
 
     @Override
     public List<String> getHeaderFiles() {
-        return Collections.singletonList("/content/go_java/libHelloWorldCallGO.h");
+        return Collections.singletonList("\"libHelloWorldCallGO.h\"");
     }
 
 }
