@@ -36,11 +36,11 @@ import org.graalvm.word.WordFactory;
 public class HelloWorldGraalVM {
 
     @CFunction(transition = Transition.NO_TRANSITION)
-    private native void heavyWork(int num);
+    private static native void heavyWork(int num);
 
     public static void main(String[] args) {
         final int num = Integer.valueOf(args[0]);
-        new HelloWorldGraalVM().heavyWork(num);
+        heavyWork(num);
 
     }
 }
