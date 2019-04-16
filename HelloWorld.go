@@ -5,7 +5,7 @@ import "fmt"
 
 //export HeavyWorkFromGo
 func HeavyWorkFromGo(num int) {
-    fmt.Printf("HeavyWorkFromGo: %d\n", num)
+    fmt.Printf("HeavyWork in Go: %d\n", num)
 }
 
 func main(){
